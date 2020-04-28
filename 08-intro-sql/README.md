@@ -6,6 +6,7 @@ SQL stands for Structured Query Language and is a language that allows us to tal
 
 - Store / persist information
 - Manipulate that information
+- We can perform CRUD actions: Create, Read, Update, Delete
 
 ## Creating Databases & Tables From the Command Line With Sqlite3
 
@@ -36,35 +37,37 @@ CREATE TABLE cats (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
 1. Write the SQL to return all of the rows in the artists table?
 
 ```SQL
-
+SELECT * FROM artists;
 ```
 
 2. Write the SQL to select the artist with the name "Black Sabbath"
 
 ```SQL
-
+SELECT * FROM artists WHERE name == "Black Sabbath";
+-- or
+SELECT * FROM artists WHERE name LIKE "%Black%";
 ```
 
 3. Write the SQL to create a table named 'fans' with an auto-incrementing ID that's a primary key and a name field of type text
 
 ```sql
-
+CREATE TABLE fans (id INTEGER PRIMARY KEY, name TEXT);
 ```
 
-4. Write the SQL to alter the fans table to have a artist_id column type integer?
+4. Write the SQL to alter the fans table to have an artist_id column type integer?
 
 ```sql
-
+ALTER TABLE fans ADD COLUMN artist_id INTEGER;
 ```
 
 5. Write the SQL to add yourself as a fan of the Black Eyed Peas?
 
 ```sql
-
+INSERT INTO fans (name, artist_id) VALUES ("Amelie", 169);
 ```
 
 6. Write the SQL to return fans that are not fans of the black eyed peas
 
 ```sql
-
+SELECT *  FROM fans WHERE artist_id != 169
 ```
