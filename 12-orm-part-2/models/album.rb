@@ -2,11 +2,12 @@ class Album
   attr_accessor :title, :artist_id, :id
   #id and name) -> columns
   @@all = [ ]
-  def initialize(title, artist_id, id=nil)
-    @title = title
-    @artist_id = artist_id
-    @id = id
-    @@all << self
+  def initialize(album)
+    # binding.pry
+    @name = album["id"]
+    @id = album["artist_id"]
+    @title = album["title"]
+    # @@all << self
   end
 
   def self.all
