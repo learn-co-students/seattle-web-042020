@@ -1,0 +1,2 @@
+class Apple < Food
+end
