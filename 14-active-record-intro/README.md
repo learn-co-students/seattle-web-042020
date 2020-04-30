@@ -97,4 +97,9 @@ class Artist
 end 
 
 # table rows -> Ruby instances
+
+# Want to access methods that handle data inside of our tables or models
+ActiveRecord::Base
+# Want to handle the changing the structure of our database/schema
+ActiveRecord::Migration
 ```
