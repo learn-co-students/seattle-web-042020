@@ -1,0 +1,6 @@
+require_relative 'config/environment'
+
+desc "This will start a binding.pry"
+task :banana do 
+  binding.pry
+end
