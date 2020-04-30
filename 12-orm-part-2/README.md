@@ -1,5 +1,5 @@
 # Intro to SQL 🛢
-
+# A achange was made here
 ## What is SQL?
 
 SQL stands for Structured Query Language and is a language that allows us to talk to databases in order to:
