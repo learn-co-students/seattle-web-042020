@@ -89,14 +89,14 @@ class Artist < ActiveRecord::Base
 # # album: id, title, artist_id
 # # albums belongs to the artist[album_id: 1, album_id: 2, 3, 4,, 5, 6]
 # # 
-#   def albums
-#     # binding.pry
-#     albums = CONN.execute("
-#       SELECT * FROM artists 
-#       INNER JOIN albums
-#       ON artists.id = albums.artist_id"
-#     )
-#     albums.map { |album| Album.new(album)}
-#   end
+  # def albums
+  #   # binding.pry
+  #   albums = CONN.execute("
+  #     SELECT * FROM artists 
+  #     INNER JOIN albums
+  #     ON artists.id = albums.artist_id"
+  #   )
+  #   albums.map { |album| Album.new(album)}
+  # end
 # #***********************************************************************************************#
 end

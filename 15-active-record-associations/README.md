@@ -1,4 +1,9 @@
 ## Questions???????
+- Lab taking an extra step to create an association.
+- Associations lab. 
+- Is there a way to rollback everything ( migrations ).
+- You are creating the foreign key to link the tables.
+- how does active record know about the foreign keys?
 
 #### ORM Review:
 - DB -> Domain/Project

@@ -8,7 +8,7 @@ require_all 'models'
 
 ActiveRecord::Base.establish_connection(
   adapter: 'sqlite3',
-  database: "music.db"
+  database: "db/lyft_for_services.db"
 )
 # module SQLite3
 #   class Database

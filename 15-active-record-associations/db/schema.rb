@@ -10,37 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_05_01_203702) do
 
-  create_table "albums", force: :cascade do |t|
-    t.string "title"
-    t.integer "artist_id"
+  create_table "rides", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "service_id"
+    t.float "cost"
+    t.float "distance"
   end
 
-  create_table "artists", force: :cascade do |t|
+  create_table "services", force: :cascade do |t|
+    t.string "company"
+    t.string "address"
+    t.integer "rating"
+    t.string "service_type"
+  end
+
+  create_table "users", force: :cascade do |t|
     t.string "name"
-  end
-
-  create_table "fans", force: :cascade do |t|
-    t.text "name"
-    t.integer "artist_id"
-  end
-
-  create_table "genres", force: :cascade do |t|
-    t.string "name"
-  end
-
-# Could not dump table "sqlite_stat1" because of following StandardError
-#   Unknown type '' for column 'tbl'
-
-  create_table "tracks", force: :cascade do |t|
-    t.string "name"
-    t.integer "genre_id"
-    t.integer "album_id"
-    t.string "composer"
-    t.integer "milliseconds"
-    t.integer "bytes"
-    t.decimal "unit_price"
+    t.string "address"
+    t.integer "rating"
   end
 
 end
