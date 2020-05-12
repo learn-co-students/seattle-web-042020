@@ -2,14 +2,7 @@
 
 ## Goals
 
-- [ ] Review
-  - [ ] Rake
-  - [ ] Rack
-  - [ ] Shotgun
-  - [ ] Sinatra
-  - [ ] Corneal
-  - [ ] CRUD
-  - [ ] REST
+- [ ] Review: Rake, Rack, Shotgun, Sinatra, Corneal, CRUD, REST
 - [ ] Implementation of RESTful Routing & HTML forms
 - [ ] Render vs. Redirect
 
