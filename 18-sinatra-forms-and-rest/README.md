@@ -7,6 +7,7 @@
   - [ ] Rack
   - [ ] Shotgun
   - [ ] Sinatra
+  - [ ] Corneal
   - [ ] CRUD
   - [ ] REST
 - [ ] Implementation of RESTful Routing & HTML forms
@@ -40,10 +41,13 @@
 - A DSL (Domain Specific Language) for quickly creating web applications in Ruby
 - Lightweight version of Rails
 
+### Corneal
+
+- A Ruby gem that is a Sinatra app generator with Rails-like simplicity (to implement basic directory structure of MVC App in Sinatra)
+
 ### CRUD (Create, Read, Update, Delete)
 
-- You can perform the CRUD actions using ActiveRecord
-  ![rest1](./images/crud.png)
+![rest1](./images/crud.png)
 
 ### REST (Representational State Transfer)
 
@@ -51,10 +55,6 @@
 - Many of the CRUD actions are different actions that occur on the same resource
   ![rest1](./images/rest1.png)
   ![rest2](./images/rest2.png)
-
-### Corneal
-
-- A Ruby gem that is a Sinatra app generator with Rails-like simplicity (to implement basic directory structure of MVC App in Sinatra)
 
 ## Implementation of RESTful Routing
 

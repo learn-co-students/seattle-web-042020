@@ -188,7 +188,6 @@ a.button {
 .games .game-info .title {
   font-family: 'Press Start 2P', cursive;
   color: var(--white);
-  text-decoration: none;
   margin-bottom: 10px;
 }
 
