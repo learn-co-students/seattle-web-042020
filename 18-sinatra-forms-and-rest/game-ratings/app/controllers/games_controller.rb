@@ -26,4 +26,27 @@ class GamesController < ApplicationController
 
 		redirect "/games/#{@game.id}"
 	end
+
+	# Update in CRUD
+	get '/games/:id/edit' do
+		@game = Game.find(params[:id])
+
+		erb :"games/edit"
+	end
+
+	# Update in CRUD
+	patch '/games/:id' do
+		@game = Game.find(params[:id])
+
+		@game.update(params[:game])
+		redirect "/games/#{@game.id.to_s}"
+	end
+
+	# Delete in CRUD
+	delete '/games/:id' do
+		@game = Game.find(params[:id])
+		@game.destroy
+
+		redirect "/games"
+	end
 end

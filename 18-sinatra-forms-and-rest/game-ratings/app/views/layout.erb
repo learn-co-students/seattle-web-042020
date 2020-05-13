@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="/stylesheets/main.css" />
   </head>
   <body>
+    <nav>
+      <a href="/">Home</a> | <a href="/games">All Games</a> |
+      <a href="/games/new">Add New Game</a>
+    </nav>
+
     <div class="content-wrapper">
       <%= yield %>
     </div>
@@ -34,8 +39,8 @@
     <!--[if lt IE 7]>
       <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
       <script>
-        window.attachEvent("onload", function() {
-          CFInstall.check({ mode: "overlay" });
+        window.attachEvent('onload', function () {
+          CFInstall.check({ mode: 'overlay' });
         });
       </script>
     <![endif]-->
