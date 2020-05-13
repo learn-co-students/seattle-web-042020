@@ -1,0 +1,23 @@
+<h1>Create a new game</h1>
+
+<form method="post" action="/games">
+	<label for="">Title</label>
+	<input type="text" name="title">
+
+	<label for="">Description</label>
+	<input type="text" name="description">
+
+	<label for="">Image Url</label>
+	<input type="text" name="image_url">
+
+	<label for="">Company</label>
+	<input type="text" name="company_id">
+	<select name="company_id" id="company_id">
+		<% @companies.each do |company| %>
+			<option value="<%= company.id %>"><%= company.name %></option>
+		<% end %>
+	</select>
+	
+
+	<input type="submit" value="Create new game">
+</form>

@@ -1,0 +1,10 @@
+<div class="single-game">
+  <h1><%= @game.title %></h1>
+  <p>Description: <%= @game.description %></p>
+  <img src="<%= @game.image_url %>" alt="" />
+
+  <form method="post" action="/games/<%= @game.id %>">
+    <input type="hidden" name="_method" value="delete" />
+    <input type="submit" value="Delete this game" class="button" />
+  </form>
+</div>

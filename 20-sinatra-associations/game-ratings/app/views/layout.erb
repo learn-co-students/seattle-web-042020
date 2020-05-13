@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <title>GameRatings</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel=“stylesheet”
+    href=“https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans|Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a> | <a href="/games">All Games</a> |
+      <a href="/games/new">Add New Game</a>
+    </nav>
+
+    <div class="content-wrapper">
+      <%= yield %>
+    </div>
+
+    <footer class="branding">
+      <small>&copy; 2019 <strong>GameRatings</strong></small>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!--[if lt IE 7]>
+      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+      <script>
+        window.attachEvent('onload', function () {
+          CFInstall.check({ mode: 'overlay' });
+        });
+      </script>
+    <![endif]-->
+  </body>
+</html>

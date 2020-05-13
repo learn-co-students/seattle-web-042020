@@ -1,0 +1,15 @@
+<h1>All companies!</h1>
+
+<div class="games">
+  <% @companies.each do |company| %>
+  <div class="game">
+    <div class="image">
+      <img src="<%= company.image_url %>" alt="<%= company.name %>" />
+    </div>
+
+    <div class="game-info">
+      <a class="title" href="/companies/<%= company.id %>"><%= company.name %></a>
+    </div>
+  </div>
+  <% end %>
+</div>

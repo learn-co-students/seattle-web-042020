@@ -1,0 +1,26 @@
+<h1>Edit this game</h1>
+
+<form method="post" action="/games/<%= @game.id %>">
+  <input type="hidden" name="_method" value="patch" />
+
+  <label for="title">Title</label>
+  <input type="text" name="game[title]" value="<%= @game.title %>" id="title" />
+
+  <label for="description">Description</label>
+  <input
+    type="text"
+    name="game[description]"
+    value="<%= @game.description %>"
+    id="description"
+  />
+
+  <label for="image_url">Image Url</label>
+  <input
+    type="text"
+    name="game[image_url]"
+    value="<%= @game.image_url %>"
+    id="image_url"
+  />
+
+  <input type="submit" value="Update game" />
+</form>
