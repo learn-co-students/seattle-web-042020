@@ -1,0 +1,28 @@
+<form action="/pirates" method="post">
+  <label for="pirate[name]">Pirate Name</label>
+  <input type="text" name="pirate[name]">
+  <label for="height">Pirate height</label>
+  <input type="text" name="pirate[height]">
+  <label for="weight">Pirate weight</label>
+  <input type="text" name="pirate[weight]">
+  <br><br>
+  <%# <input type="text" name="nums[]"> %>
+  <%# <input type="text" name="nums[]"> %>
+  <%# <input type="text" name="nums[]"> %>
+  <%# <input type="text" name="nums[]"> %>
+  <br><br>
+  <label for="name">ship Name</label>
+  <input type="text" name="ship[][name]">
+  <label for="type">ship type</label>
+  <input type="text" name="ship[][type]">
+  <label for="booty">ship booty</label>
+  <input type="text" name="ship[][booty]">
+
+  <label for="name">ship Name</label>
+  <input type="text" name="ship[][name]">
+  <label for="type">ship type</label>
+  <input type="text" name="ship[][type]">
+  <label for="name">ship booty</label>
+  <input type="text" name="ship[][booty]">
+  <input type="submit">
+</form>
