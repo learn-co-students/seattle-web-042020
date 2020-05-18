@@ -1,0 +1,36 @@
+<%# <form action="/homes" method="POST">
+<label for="name">Home Name </label>
+<input type="text" name="name">
+
+<label for="rooms">Rooms</label>
+<input type="number" name="rooms">
+
+<label for="rooms">City_id</label>
+<input type="number" name="city_id">
+</form> %>
+
+<%# <%= form_tag homes_path do %>
+    <%# label_tag :name %>
+    <%# text_field_tag :name%>
+
+    <%# label_tag :number %>
+    <%# number_field_tag :number%>
+
+    <%# label_tag :city_id %>
+    <%# number_field_tag :city_id%>
+
+    <%# submit_tag %>
+<%# end %> 
+
+<%= form_for @home do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+
+    <%= f.label :rooms%>
+    <%= f.number_field :rooms%>
+
+    <%= f.label :city_id%>
+    <%= f.number_field :city_id%>
+
+    <%= f.submit %>
+<% end %>

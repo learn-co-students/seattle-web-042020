@@ -1,0 +1,8 @@
+<h1>Homes!!</h1>
+
+<% @homes.each do |home|%>
+
+    <%# <%= link_to home.name, "/homes/#{home.id}"%> 
+    <%# <%= link_to home.name, home_path(home.id)%>  
+     <%= link_to home.name, home%> 
+<%end %>
