@@ -1,0 +1,8 @@
+<h1>Veterinarians!!</h1>
+
+<% @veterinarians.each do |vet|%>
+
+    <%# <%= link_to home.name, "/homes/#{home.id}"%> 
+    <%# <%= link_to home.name, home_path(home.id)%>  
+    <%= link_to vet.name, vet%> <br>
+<%end %>

@@ -1,0 +1,15 @@
+<%= form_for @veterinarian do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+
+    <%= f.label :rooms%>
+    <%= f.number_field :rooms%>
+
+    <%# f.label :city_id%>
+    <%# f.number_field :city_id%>
+    <select>
+        <option>Seattle</option>
+        <option>San Francisco</option>
+    </select>
+    <%= f.submit %>
+<% end %>

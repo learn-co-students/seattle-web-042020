@@ -1,0 +1,13 @@
+<h1>Name: <%= @veterinarian.name %> </h1>
+<h2>City: <%= @veterinarian.city.name%> </h2>
+<h2>Rooms: <%= @veterinarian.rooms%></h2>
+
+
+<%= form_with( model: @appointment) do |f|%>
+    <%= f.hidden_field :veterinarian_id%>
+    <%= f.collection_check_boxes :cat_id, @cats, :id, :name, include_hidden:false %>
+    <%= f.submit%>
+<%end%>
+
+<%= button_to "delete", @veterinarian, :method => :delete%>
+
