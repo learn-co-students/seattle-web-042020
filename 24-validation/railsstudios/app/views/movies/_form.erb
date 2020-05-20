@@ -1,0 +1,9 @@
+<%= form_for @movie do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+
+  
+    <%= f.collection_select :studio_id, @studios, :id, :name%>
+    <%= f.collection_select :director_id, @directors, :id, :name%> 
+    <%= f.submit%>
+<%end%>

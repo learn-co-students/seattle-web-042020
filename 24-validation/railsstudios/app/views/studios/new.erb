@@ -1,0 +1,19 @@
+<%= form_for @studio do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+
+    <%= f.label :location%>
+    <%= f.text_field :location%>
+
+    <%= f.label :founding_year%>
+    <%= f.number_field :founding_year%>
+
+
+    <%= f.submit%>
+<%end%>
+
+<% if flash[:banana] %>
+    <% flash[:banana].each do |error|%>
+        <%= error%>
+    <%end%>
+<%end%>
