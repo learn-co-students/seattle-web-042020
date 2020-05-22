@@ -1,0 +1,9 @@
+<%= flash[:message] %>
+<%= form_for @employee do |f| %>
+  <%= f.text_field :first_name %>
+  <%= f.text_field :last_name %>
+  <%= f.text_field :alias %>
+  <%= f.text_field :title %>
+  <%= f.text_field :office %>
+  <%= f.submit %>
+<% end %>

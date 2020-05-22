@@ -1,0 +1,8 @@
+<%= @employee.full_name  %>
+<%= @employee.alias %>
+<%= @employee.title %>
+<%= @employee.office %>
+<%= image_tag(@employee.image_url) %>
+<% @employee.dogs.uniq.each do |d|  %>
+  <%= d.name %>
+<% end %>
