@@ -6,13 +6,21 @@ showcase each of the employees' pets. We’ve started some of the work for you, 
 
 - Build a new rails app called Dunder_Mifflin_pet_show
 - Build out 3 Models Show, Dog and Employee
+- Dog: has_many :shows; has_many :employees, through: :shows
+- Employee: has_many :shows; has_many :dogs, through: :shows
+- Show: belongs_to :dog; belongs_to :employee
+
+
+- pages: Dog: index + show; employees index + show;
+- validations:  dog needs a name and must 
+
+- 
 - Employee will have a first_name, last_name, alias, title, office and img_url
 - Dog will have a name, breed and age
 - Dogs can be connected to many Employees through Shows and an Employee will be connected many Dogs through Shows.
 - Build out the associations for the models. If you look into the `seeds.rb` file, you'll notice that we've put
-- You'll need to add `gem 'faker'` to your Gemfile to make the seeds work.
-
 in the desired models and expected associations to make our app work. 
+- You'll need to add `gem 'faker'` to your Gemfile to make the seeds work.
 - For our index page for Dogs, a user should be able to click on a specific dog and take them to the corresponding show page.
 - The Dog show page should have their name, breed, age and the list of Dunder Mifflin Employees they are connected to
 - For our index page for Employees, a user should be able to click on a specific Employee and take them to their corresponding show page. There should be no duplicate employee names in the list.

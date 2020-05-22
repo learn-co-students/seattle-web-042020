@@ -1,0 +1,8 @@
+<%= render "form"%>
+
+<% if flash[:error] %>
+  <%  flash[:error].each do | message | %> 
+    <%= message %>
+  <%end%>
+    
+<% end %>

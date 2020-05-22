@@ -1,0 +1,5 @@
+<%= form_for @show do |f| %>
+<%= f.collection_select :dog_id, @dogs, :id, :name%>
+<%= f.collection_select :employee_id, @employees, :id, :first_name%>
+<%= f.submit %>
+<% end %>
