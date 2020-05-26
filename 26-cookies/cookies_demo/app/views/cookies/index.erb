@@ -1,0 +1,27 @@
+
+<h1>Number of Votes: <%=@user_votes%><h3>
+<div style="color:red">
+    <% if flash[:error] %>
+        <%= flash[:error]%>
+
+    <%end%>
+</div>
+<div class="container">
+
+<% @cookies.each do |cookie|%>
+    <div class="card">
+        <div><%= cookie.name%></div>
+        <div><img src="<%= cookie.img_url%>" /></div>
+
+        <div id="vote">
+        <h3><%= cookie.votes.length%></h3>
+        <%= form_for  Vote.new do |f| %>
+        <%= hidden_field_tag "cookie_id", "#{cookie.id}" %>
+        <button type="submit" class="btn">
+        Vote
+        </button>
+        <% end %>
+        </div>
+    </div>
+    <%end%>
+</div>

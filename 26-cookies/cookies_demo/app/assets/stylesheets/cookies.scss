@@ -1,0 +1,24 @@
+// Place all the styles related to the Cookies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+img{
+    width: 150px;
+    height: 150px;
+}
+.container{
+    width: 400px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+#vote{
+    display: flex;
+    justify-content: space-between;
+
+    h3{
+        padding: 0;
+        margin: 0;
+    }
+}
