@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CookiesDemo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <% if @logged_in%>
+    <h1><%=@user.name%></h1>
+    <%= link_to "Log out",  logout_path %>
+
+    <%else%>
+      <%= link_to "Log in", login_path %>
+      <%= link_to "Sign up", new_user_path %>
+   <%end%>
+     <%= yield %>
+  </body>
+</html>

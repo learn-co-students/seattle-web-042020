@@ -1,0 +1,23 @@
+
+ <% if flash[:errors] %>
+    <h1 class="notice" style="color:red"><%= flash[:errors] %></h1>
+<% end %>
+<h1>Number of Votes: <%=@user_votes%><h3>
+<div class="container">
+<% @cookies.each do |cookie|%>
+    <div class="card">
+        <div><%= cookie.name%></div>
+        <div><img src="<%= cookie.img_url%>" /></div>
+
+        <div id="vote">
+        <h3><%= cookie.votes.length%></h3>
+        <%= form_for [cookie, Vote.new] do |f| %>
+    <%# add hidden feild and un nest routes %>
+        <button type="submit" class="btn">
+        Vote
+        </button>
+        <% end %>
+        </div>
+    </div>
+    <%end%>
+</div>

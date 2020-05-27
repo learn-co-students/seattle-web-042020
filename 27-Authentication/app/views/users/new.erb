@@ -1,0 +1,19 @@
+<h1>New User</h1>
+ <% if flash[:errors] %>
+    <% flash[:errors].each do |error|%>
+    <h1 class="notice" style="color:red"><%= error %></h1>
+    <%end%>
+<% end %>
+<%= form_for @user do |f| %>
+  <ul>
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </li>
+  </ul>
+  <%= f.submit %>
+<% end %>
