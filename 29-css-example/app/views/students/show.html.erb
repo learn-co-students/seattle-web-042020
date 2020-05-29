@@ -1,0 +1,39 @@
+<div class='ui raised segment'>
+  <div class='ui fluid card'>
+    <div class='huge content'>
+      <div class='header'><h1 class="student-name"><%= @student.name %></h1></div>
+      <div class="meta">
+         <span class="date">
+           <h3 id="cohort-name"><%= @student.cohort.name %> (<%= @student.cohort.start_date.strftime('%m%d%y') %>)</h3>
+         </span>
+      </div>
+      <div class="description">
+        <h3><%= @student.email %></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui card">
+  <div class="content">
+    <div class="right floated meta">14h</div>
+    <img class="ui avatar image" src="https://www.glutenfreepalate.com/wp-content/uploads/2018/08/Gluten-Free-Pizza-3.2-735x486.jpg"> Pizza
+  </div>
+  <div class="image">
+    <img>
+  </div>
+  <div class="content">
+    <span class="right floated">
+      <i class="heart outline like icon"></i>
+      17 likes
+    </span>
+    <i class="comment icon"></i>
+    3 comments
+  </div>
+  <div class="extra content">
+    <div class="ui large transparent left icon input">
+      <i class="heart outline icon"></i>
+      <input type="text" placeholder="Add Comment...">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div style="margin-top: 100px;">
+    <%= flash[:message] %>
+    <%= form_for @teacher do |f| %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :grade %>
+        <%= f.text_field :grade %>
+        <%= f.label :subject %>
+        <%= f.text_field :subject %>
+        <%= f.submit %>
+    <% end %>
+</div>

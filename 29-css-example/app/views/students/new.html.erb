@@ -1,0 +1,16 @@
+  <div style="margin-top: 120px;">
+
+  <h1 id="student-form-header">Create a Student</h1>
+  <%= form_for @student, html: {class: 'ui form'} do |f| %>
+    <div class="field">
+      <%= f.text_field(:name, placeholder: 'Enter the student name...') %>
+    </div>
+    <div class="field">
+      <%= f.text_field :email, placeholder: 'Enter the student email...' %>
+    </div>
+    <div class="field">
+      <%= f.collection_select(:cohort_id, Cohort.all, :id, :name) %>
+    </div>
+    <%= f.submit({class: 'ui huge pink button'}) %>
+  <% end %>
+</div>

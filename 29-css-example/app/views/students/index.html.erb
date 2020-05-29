@@ -1,0 +1,12 @@
+<div style="margin-top: 120px;">
+  <h1 class="all-students-header">All Students</h1>
+
+  <div class= 'ui huge middle aligned selection divided list'>
+    <% @students.each do |student| %>
+      <div class="item">
+        <%= link_to student.name, student_path(student) %>
+      </div>
+    <% end %>
+  </div>
+  </div>
+</div>
