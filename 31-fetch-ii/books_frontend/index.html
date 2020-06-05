@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Books</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- Change the font from google fonts-->
+    <h1>Book List</h1>
+
+    <select id="selectThing">
+      <option value="hello">Hello</option>
+      <option value="dinosaur">World</option>
+    </select>
+
+    <form id="new-book-form">
+      <h2>NEW BOOK</h2>
+      Book Title:<br />
+      <input type="text" name="title" value="" />
+      <br />
+      Author:<br />
+      <input type="text" name="author" value="" />
+      <br /><br />
+      Book Cover URL:<br />
+      <input type="text" name="cover" value="" />
+      <br />
+      <button type="submit">Submit New Book</button>
+    </form>
+
+    <form id="edit-form">
+      <h2>EDIT</h2>
+      Book Title:<br />
+      <input type="text" name="title" value="" />
+      <br />
+      Author:<br />
+      <input type="text" name="author" value="" />
+      <br /><br />
+      Book Cover URL:<br />
+      <input type="text" name="cover" value="" />
+      <input name="bookId" type="hidden"/>
+      <br />
+      <button type="submit">Edit Book</button>
+    </form>
+
+    <!-- add some css to the card div-->
+    <div id="book-list">
+      <!-- <div class = 'card'>
+			 <img src = 'https://images-na.ssl-images-amazon.com/images/I/31AYTZWPCPL._SX309_BO1,204,203,200_.jpg'/>
+			 <h3>Soul Kiss</h3>
+			 <p>Shay Youngblood</p>
+		</div> -->
+    </div>
+
+    <!-- Remove books js - let's fetch them from the database -->
+    <!-- <script src="books.js"></script> -->
+  </body>
+</html>

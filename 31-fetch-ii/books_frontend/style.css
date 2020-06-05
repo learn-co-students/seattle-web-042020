@@ -1,0 +1,23 @@
+body{
+
+	background: pink;
+}
+
+.card{
+
+	display:inline-block;
+	border-style: double;
+	width: 310px;
+}
+
+img {
+	height:325px;
+}
+
+#new-book-form {
+	display:block;
+}
+
+#edit-form {
+	display:none;
+}
