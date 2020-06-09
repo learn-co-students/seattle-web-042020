@@ -1,0 +1,64 @@
+{
+  "correctAnswers": [
+    {
+      "answer": "Romans",
+      "id": 1
+    },
+    {
+      "answer": "(George Bernard) Shaw",
+      "id": 2
+    },
+    {
+      "answer": "an elector",
+      "id": 3
+    },
+    {
+      "text": "G (for regal)",
+      "id": 4
+    },
+    {
+      "text": "a leopard",
+      "id": 5
+    },
+    {
+      "text": "Mata Hari",
+      "question": "The name of this woman who was executed at Vincennes in 1917 became a synonym for a seductive spy",
+      "id": 6
+    },
+    {
+      "text": "a pizza",
+      "question": "Social studies teacher Mr. Clinchy nukes a DiGiorno thin crust one of these & of course, offers to share",
+      "id": 7
+    },
+    {
+      "answer": "a discography",
+      "question": "",
+      "id": 8
+    },
+    {
+      "answer": "<i>The Great Gatsby</i>",
+      "question": "(I'm Sam Waterston.) I played Nick Carraway in the 1974 film version of this famous novel",
+      "id": 9
+    },
+    {
+      "answer": "macadamia",
+      "question": {},
+      "id": 10
+    },
+    {
+      "answer": "a hand",
+      "question": "4 Egyptian digits equaled a palm; 5 equaled this",
+      "id": 11
+    },
+    {
+      "answer": "an operating system",
+      "question": "A snowcat is a snowmobile; Snow Leopard is one of these for a Mac",
+      "id": 12
+    },
+    {
+      "answer": "Karl Marx",
+      "question": "Workers of all lands are addressed on his London tombstone",
+      "id": 13
+    }
+  ]
+}

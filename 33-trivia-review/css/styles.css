@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+.mainarea {
+    background-color:lightcoral;
+    color: darkblue;
+    text-align: center;
+    padding: 12px;
+    height:90%;
+}
+
+.footer {
+    height: 10%;
+    background-color: lightyellow;
+}
+
+.main {
+    background-color: lightskyblue;
+    width: 100%;
+}
+
+#answer {
+    display: none;
+}
