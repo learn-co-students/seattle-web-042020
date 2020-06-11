@@ -13,6 +13,8 @@ Output format: A single line of two space-separated integers.
 ```javascript
 minMax([1, 3, 5, 7, 9])
     => 16 24
+minMax([6,3,2,147,9,2])
+    => 22 167
 ```
 
 Explanation: 
