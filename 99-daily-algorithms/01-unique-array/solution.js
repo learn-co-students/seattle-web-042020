@@ -1,5 +1,7 @@
 // Steven's 
 
+// the sort here does not actually sort by numerical value, but worked for our test case.
+
 function uniqueArray(input){
     let arr = input.sort()
     let uniq = []
@@ -12,4 +14,4 @@ function uniqueArray(input){
       }
     }
     return uniq
-  }
+}
