@@ -5,6 +5,8 @@ Today we'll learn about more weapons for your interviewing defense and attack ar
 ## SWBAT
 
 - Define a Linked List.
+    - object in which you can move the nodes in one direction, but not another (Singly Linked List)
+    - Made up of nodes
 - Code up a Linked List.
 - Talk about why on earth we would bother with Linked Lists. 
 
