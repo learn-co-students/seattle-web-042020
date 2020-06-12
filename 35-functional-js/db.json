@@ -1,0 +1,15 @@
+{
+  "coffee": [
+    {
+      "name": "Dark Side Dark Roast",
+      "roast": "dark",
+      "brand": "Vader Coffee"
+    },
+    {
+      "name": "Mos Eisley Medium",
+      "roast": "medium",
+      "brand": "cantina blends"
+    },
+    { "name": "Jedi Iced Tea", "roast": "light", "brand": "starbucks" }
+  ]
+}
