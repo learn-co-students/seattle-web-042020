@@ -13,3 +13,4 @@ Example:
 ## Constraints
 - The array will contain between 0-100 elements.
 - Elements in the array will be constrained to 32-bit signed integers (whole numbers).
+- Elements in the array will not repeat
