@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Goals
 
 Create an application that mimics the behavior of an all you can eat buffet.
+The database of food can be found in a json-server, under `http://localhost:3000/food`.
 
 As a user I can: 
 
