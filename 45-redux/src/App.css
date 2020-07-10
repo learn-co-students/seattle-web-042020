@@ -1,0 +1,12 @@
+.container{
+  text-align: center;
+  font-size: 14vw;
+}
+
+button{
+  width:20vw;
+  padding:3vw;
+  margin:3vw;
+  background:#1ad1ff;
+  font-size: 3vw;
+}
