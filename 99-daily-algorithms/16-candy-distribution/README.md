@@ -8,7 +8,7 @@ In this problem, *n* children have got *m* pieces of candy. They want to eat as 
 candyDistrubition(3, 10)
   => 9
 candyDistrubition(5, 11)
-  => 2
+  => 10
 ```
 
 ## Constraints
